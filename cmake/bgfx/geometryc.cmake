@@ -23,7 +23,7 @@ target_include_directories(geometryc PRIVATE ${MESHOPTIMIZER_INCLUDE_DIR})
 target_link_libraries(geometryc PRIVATE bx bgfx-vertexlayout ${MESHOPTIMIZER_LIBRARIES})
 target_compile_definitions(geometryc PRIVATE "-D_CRT_SECURE_NO_WARNINGS")
 set_target_properties(
-	geometryc PROPERTIES FOLDER "bgfx/tools" #
+	geometryc PROPERTIES FOLDER "${BGFX_MODULE_FOLDER}/tools" #
 						 OUTPUT_NAME ${BGFX_TOOLS_PREFIX}geometryc #
 )
 

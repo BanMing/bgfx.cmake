@@ -18,7 +18,7 @@ add_executable(texturec ${TEXTUREC_SOURCES})
 
 target_link_libraries(texturec PRIVATE bimg_decode bimg_encode bimg)
 set_target_properties(
-	texturec PROPERTIES FOLDER "bgfx/tools" #
+	texturec PROPERTIES FOLDER "${BGFX_MODULE_FOLDER}/tools" #
 						OUTPUT_NAME ${BGFX_TOOLS_PREFIX}texturec #
 )
 

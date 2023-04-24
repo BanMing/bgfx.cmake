@@ -266,13 +266,13 @@ function(add_example ARG_NAME)
 	endif()
 
 	# Directory name
-	set_target_properties(example-${ARG_NAME} PROPERTIES FOLDER "bgfx/examples")
+	set_target_properties(example-${ARG_NAME} PROPERTIES FOLDER "${BGFX_MODULE_FOLDER}/examples")
 endfunction()
 
 # Build all examples target
 if(BGFX_CUSTOM_TARGETS)
 	add_custom_target(examples)
-	set_target_properties(examples PROPERTIES FOLDER "bgfx/examples")
+	set_target_properties(examples PROPERTIES FOLDER "${BGFX_MODULE_FOLDER}/examples")
 endif()
 
 # Add common library for examples

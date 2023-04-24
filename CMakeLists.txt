@@ -102,7 +102,7 @@ file(TO_CMAKE_PATH "${BGFX_DIR}" BGFX_DIR)
 include(${CMAKE_CURRENT_SOURCE_DIR}/cmake/version.cmake)
 if(BGFX_BUILD_TOOLS AND BGFX_CUSTOM_TARGETS)
 	add_custom_target(tools)
-	set_target_properties(tools PROPERTIES FOLDER "bgfx/tools")
+	set_target_properties(tools PROPERTIES FOLDER "${BGFX_MODULE_FOLDER}/tools")
 endif()
 
 if(BGFX_INSTALL)

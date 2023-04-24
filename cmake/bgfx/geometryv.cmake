@@ -21,7 +21,7 @@ endif()
 
 target_link_libraries(geometryv PRIVATE example-common)
 set_target_properties(
-	geometryv PROPERTIES FOLDER "bgfx/tools" #
+	geometryv PROPERTIES FOLDER "${BGFX_MODULE_FOLDER}/tools" #
 						 OUTPUT_NAME ${BGFX_TOOLS_PREFIX}geometryv #
 )
 

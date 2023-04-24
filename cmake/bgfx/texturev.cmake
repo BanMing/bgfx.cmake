@@ -21,7 +21,7 @@ endif()
 
 target_link_libraries(texturev PRIVATE example-common)
 set_target_properties(
-	texturev PROPERTIES FOLDER "bgfx/tools" #
+	texturev PROPERTIES FOLDER "${BGFX_MODULE_FOLDER}/tools" #
 						OUTPUT_NAME ${BGFX_TOOLS_PREFIX}texturev #
 )
 

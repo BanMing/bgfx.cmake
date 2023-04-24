@@ -18,7 +18,7 @@ add_executable(bin2c ${BIN2C_SOURCES})
 
 target_link_libraries(bin2c PRIVATE bx)
 set_target_properties(
-	bin2c PROPERTIES FOLDER "bgfx/tools" #
+	bin2c PROPERTIES FOLDER "${BGFX_MODULE_FOLDER}/tools" #
 					 OUTPUT_NAME ${BGFX_TOOLS_PREFIX}bin2c #
 )
 

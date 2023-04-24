@@ -41,7 +41,7 @@ target_compile_definitions(
 )
 
 # Put in a "bgfx" folder in Visual Studio
-set_target_properties(fcpp PROPERTIES FOLDER "bgfx")
+set_target_properties(fcpp PROPERTIES FOLDER ${BGFX_MODULE_FOLDER})
 
 target_include_directories(fcpp PUBLIC ${FCPP_DIR})
 

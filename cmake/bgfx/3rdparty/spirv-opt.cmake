@@ -134,7 +134,7 @@ file(
 add_library(spirv-opt STATIC ${SPIRV_OPT_SOURCES})
 
 # Put in a "bgfx" folder in Visual Studio
-set_target_properties(spirv-opt PROPERTIES FOLDER "bgfx")
+set_target_properties(spirv-opt PROPERTIES FOLDER ${BGFX_MODULE_FOLDER})
 
 target_include_directories(
 	spirv-opt

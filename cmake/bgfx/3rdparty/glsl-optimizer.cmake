@@ -182,7 +182,7 @@ file(
 add_library(glsl-optimizer STATIC ${GLSL_OPTIMIZER_SOURCES})
 
 # Put in a "bgfx" folder in Visual Studio
-set_target_properties(glsl-optimizer PROPERTIES FOLDER "bgfx")
+set_target_properties(glsl-optimizer PROPERTIES FOLDER ${BGFX_MODULE_FOLDER})
 
 target_include_directories(
 	glsl-optimizer

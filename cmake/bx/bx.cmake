@@ -61,7 +61,7 @@ endforeach()
 add_library(bx STATIC ${BX_SOURCES})
 
 # Put in a "bgfx" folder in Visual Studio
-set_target_properties(bx PROPERTIES FOLDER "bgfx")
+set_target_properties(bx PROPERTIES FOLDER ${BGFX_MODULE_FOLDER})
 
 # Build system specific configurations
 if(MINGW)
@@ -119,7 +119,7 @@ elseif(UNIX)
 endif()
 
 # Put in a "bgfx" folder in Visual Studio
-set_target_properties(bx PROPERTIES FOLDER "bgfx")
+set_target_properties(bx PROPERTIES FOLDER ${BGFX_MODULE_FOLDER})
 
 if(NOT BGFX_LIBRARY_TYPE MATCHES "SHARED")
 	install(

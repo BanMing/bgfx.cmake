@@ -17,7 +17,7 @@ endif()
 add_library(bimg_encode STATIC)
 
 # Put in a "bgfx" folder in Visual Studio
-set_target_properties(bimg_encode PROPERTIES FOLDER "bgfx")
+set_target_properties(bimg_encode PROPERTIES FOLDER ${BGFX_MODULE_FOLDER})
 
 target_include_directories(
 	bimg_encode
